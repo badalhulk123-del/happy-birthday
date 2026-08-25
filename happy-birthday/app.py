@@ -13,15 +13,15 @@ st.set_page_config(
 # -----------------------------
 # Personalize these defaults
 # -----------------------------
-DEFAULT_NAME = "Birthday Star"
+DEFAULT_NAME = "Monicascade"
 DEFAULT_MESSAGE = "May your day be filled with laughter, love, surprises and beautiful memories!"
 DEFAULT_FROM = "With lots of love ❤️"
 
 with st.sidebar:
     st.header("🎁 Personalize")
-    name = st.text_input("Birthday person's name", DEFAULT_NAME)
-    message = st.text_area("Birthday message", DEFAULT_MESSAGE)
-    from_text = st.text_input("From", DEFAULT_FROM)
+    name = st.text_input("Birthday person's name", MONICA VASIREDDY)
+    message = st.text_area("Birthday message", MAN I LIKE U)
+    from_text = st.text_input("From", HULK)
     st.caption("Tip: After editing, click outside the field to refresh the greeting.")
 
 name = escape(name.strip() or DEFAULT_NAME)
