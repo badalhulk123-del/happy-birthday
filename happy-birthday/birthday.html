@@ -231,8 +231,8 @@ document.getElementById("music").addEventListener("click",()=>{
   if(!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)();
   const t=audioCtx.currentTime+.05;
   // Happy Birthday opening melody, transposed.
-  const notes=[264,264,297,264,352,330,264,264,297,264,396,352,260,230,340,261,280,250,240,230,210,300,264,264,297,264,352,330,300,400,500,600,700];
-  notes.forEach((n,i)=>playTone(n,t+i*.28,.23));
+  const notes=[ 220, 247, 262, 294, 262, 220,196, 220, 247, 294, 330, 294,262, 247, 220, 196, 175, 196,220, 262, 294, 330, 294, 262,220, 247, 294, 330, 392, 330,294, 262, 220, 196, 220, 247,262, 294, 330, 392, 440, 392];
+  notes.forEach((n,i)=>playTone(n,t+i*.48,.40));
   burst(100);
 });
 </script>
