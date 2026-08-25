@@ -137,7 +137,7 @@ animation:flicker .12s infinite alternate;filter:drop-shadow(0 0 10px #ffd166)}
         <div class="plate"></div>
       </div>
 
-      <p class="hint">🎂 Click the cake to cut it or not • 🎈 Click balloons to pop them • 🎆 Click anywhere for fireworks</p>
+      <p class="hint">🎂 the cake cut it or not • 🎈 balloons pop them • 🎆 Click anywhere </p>
 
       <div class="actions">
         <button id="wish">✨ Make a Wish</button>
@@ -145,7 +145,7 @@ animation:flicker .12s infinite alternate;filter:drop-shadow(0 0 10px #ffd166)}
         <button id="music" class="secondary">🎵 Birthday Music</button>
       </div>
 
-      <div class="footer">Made with ❤️ <span id="from">{{BADASS}}</span></div>
+      <div class="footer">Made with ❤️ <span id="from">BADASS</span></div>
     </section>
   </main>
 </div>
@@ -231,7 +231,7 @@ document.getElementById("music").addEventListener("click",()=>{
   if(!audioCtx) audioCtx=new (window.AudioContext||window.webkitAudioContext)();
   const t=audioCtx.currentTime+.05;
   // Happy Birthday opening melody, transposed.
-  const notes=[264,264,297,264,352,330,264,264,297,264,396,352];
+  const notes=[264,264,297,264,352,330,264,264,297,264,396,352,260,230,340,261,280,250,240,230,210,100];
   notes.forEach((n,i)=>playTone(n,t+i*.28,.23));
   burst(100);
 });
