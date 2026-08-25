@@ -19,9 +19,9 @@ DEFAULT_FROM = "With lots of love ❤️"
 
 with st.sidebar:
     st.header("🎁 Personalize")
-    name = st.text_input("Birthday person's name", MONICA VASIREDDY)
-    message = st.text_area("Birthday message", MAN I LIKE U)
-    from_text = st.text_input("From", HULK)
+    name = st.text_input("Birthday person's name", DEFAULT_NAME)
+    message = st.text_area("Birthday message", DEFAULT_MESSAGE)
+    from_text = st.text_input("From", DEFAULT_FROM)
     st.caption("Tip: After editing, click outside the field to refresh the greeting.")
 
 name = escape(name.strip() or DEFAULT_NAME)
